@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FAFAED;
+}
+
+
+.hero {
+  background-image: url('./assets/PadraoVermelho.png');
+  min-height: 677px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.logo img {
+  height: 16px;
+}
+
+.entregador {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 56px;
+  text-align: center;
+  color: #FFC024;
+  margin-top: 12px;
+}
+
+.sub-title h2{
+  margin-top: 11px;
+  margin-bottom: 24px;
+  color: #FAFAED;
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 100px;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.description p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  max-width: 300px;
+}
+
+.broths {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 62px;
+}
+
+.proteins {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.broths > .list {
+  overflow: hidden;
+}
+
+.proteins > .list {
+  overflow: hidden;
+}
+
+.list > ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  width: fit-content;
+  margin-inline: 16px;
+}
+
+.list-item {
+  margin-top: 32px;
+  list-style: none;
+  width: 288px;
+  height: 316px;
+  background-color: #E0DBBF99;
+  box-shadow: 0px 4px 12px 0px #E0DBBF99;
+  border-radius: 13px;
+  padding-inline: 15px;
+}
+
+.list-item.active {
+  background-color: #1820EF;
+  color: white;
+}
+
+.active > .list-title {
+  color: white;
+}
+
+.active > .list-price {
+  color: #FFC024;
+}
+
+.broths h1 {
+  font-size: 24px;
+  font-weight: 900;
+  max-width: 328px;
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+.proteins h1 {
+  font-size: 24px;
+  font-weight: 900;
+  max-width: 328px;
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+.list-img.active {
+  display: none;
+}
+
+.list-img {
+  margin-bottom: 14px;
+  margin-top: 48px;
+}
+
+.list-img-active {
+  display: none;
+}
+
+.list-img-active.active {
+  display: inline-block;
+  margin-bottom: 14px;
+  margin-top: 48px;
+}
+
+.list-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #1820EF;
+  font-weight: 900;
+}
+
+.list-description {
+  min-height: 36px;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+.list-price {
+  color: #FF4E42;
+  font-weight: 900;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.carrousel-position {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.carrousel-item {
+  border-radius: 20px;
+  height: 12px;
+  width: 12px;
+  background-color: #E0DBBF;
+}
+
+.carrousel-item.active {
+  width: 36px;
+  background-color: #FF4E42;
+}
+
+.make-order {
+  margin-top: 48px;
+  margin-bottom: 38px;
+  width: 213px;
+  height: 60px;
+  border: none;
+  background-color: #C5C5C5;
+  border-radius: 50px;
+  padding: 20px 16px;
+  font-weight: bold;
+  color: white;
+  width: 213px;
+  text-transform: uppercase;
+}
+
+.make-order > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.make-order.active {
+  background-color: #1820EF;
+}
